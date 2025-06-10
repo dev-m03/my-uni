@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    password: dev2711
-    url: jdbc:postgresql://localhost:5432/lms
-    username: postgres
+    password: xxxxxx
+    url: jdbc:postgresql://localhost:<port no.>/<database name>
+    username: <db username>
   jpa:
     hibernate:
       ddl-auto: update
@@ -16,3 +16,8 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
